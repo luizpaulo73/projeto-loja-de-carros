@@ -1,13 +1,51 @@
-import imgFerrari from "./812gts/812gts-1.jpeg"
+type Carro = {
+  id: number;
+  nome: string;
+  foto1: string;
+  foto2: string;
+  foto3: string;
+  foto4: string;
+  foto5: string;
+  marca: string;
+  modelo: string;
+  versao: string;
+  preco: string;
+  anoFabricacao: number;
+  anoModelo: number;
+  km: string;
+  motor: string;
+  potencia: string;
+  aceleracao: string;
+  airbag: number;
+  combustivel: string;
+  conservacao: string;
+  transmissao: string;
+  placaFim: number;
+  portas: number;
+  cor: string;
+  bancos: string;
+  freios: string;
+  farois: string;
+  rodas: string;
+  blindado: string;
+  bluetooth: string;
+  tetoSolar: string;
+  conversivel: string;
+  pilotoAutomatico: string;
+  multimedia: string;
+  sensorChuva: string;
+  sensorEstacionamento: string;
+};
 
-export const ferrari812 = [
+export const listaCarros: Carro[] = [
     {
+      id: 1,
       nome: "Ferrari 812 GTS",
-      foto1: imgFerrari[0],
-      foto2: imgFerrari[1],
-      foto3: imgFerrari[2],
-      foto4: imgFerrari[3],
-      foto5: imgFerrari[4],
+      foto1: "/cars/812gts/812gts-1.jpeg",
+      foto2: "/cars/812gts/812gts-2.jpeg",
+      foto3: "/cars/812gts/812gts-3.jpeg",
+      foto4: "/cars/812gts/812gts-4.jpeg",
+      foto5: "/cars/812gts/812gts-5.jpeg",
       marca: "FERRARI",
       modelo: "812",
       versao: "GTS",
@@ -38,16 +76,14 @@ export const ferrari812 = [
       sensorChuva: "Sim",
       sensorEstacionamento: "Dianteiro / traseiro / cameras 360°",
     },
-  ];
-
-  export const audiR8 = [
     {
+      id: 2,
       nome: "Audi R8 V10 Spyder",
-      foto1: "",
-      foto2: "",
-      foto3: "",
-      foto4: "",
-      foto5: "",
+      foto1: "/cars/r8/r8-1.jpeg",
+      foto2: "/cars/r8/r8-2.jpeg",
+      foto3: "/cars/r8/r8-3.jpeg",
+      foto4: "/cars/r8/r8-4.jpeg",
+      foto5: "/cars/r8/r8-5.jpeg",
       marca: "AUDI",
       modelo: "R8",
       versao: "V10 Spyder",
@@ -65,7 +101,6 @@ export const ferrari812 = [
       placaFim: 7,
       portas: 2,
       cor: "Preto",
-      garantiaDeFabrica: "Nao",
       bancos: "Couro",
       freios: "Abs com disco nas 4 rodas",
       farois: "Full led",
@@ -79,16 +114,14 @@ export const ferrari812 = [
       sensorChuva: "Nao",
       sensorEstacionamento: "Camera de re/ dianteiro/ traseiro",
     },
-  ];
-
-export const porsche911 = [
     {
+      id: 3,
       nome: "Porsche 911 Carrera",
-      foto1: "",
-      foto2: "",
-      foto3: "",
-      foto4: "",
-      foto5: "",
+      foto1: "/cars/911/911-1.jpeg",
+      foto2: "/cars/911/911-2.jpeg",
+      foto3: "/cars/911/911-3.jpeg",
+      foto4: "/cars/911/911-4.jpeg",
+      foto5: "/cars/911/911-5.jpeg",
       marca: "PORSCHE",
       modelo: "911",
       versao: "Carrera",
@@ -119,16 +152,52 @@ export const porsche911 = [
       sensorChuva: "Sim",
       sensorEstacionamento: "Dianteiro / traseiro / cameras 360°",
     },
-  ];
-  
-  export const porscheTaycan = [
     {
+      id: 4,
+      nome: "Audi RS 6 Avant",
+      foto1: "/cars/rs6/rs6-1.jpeg",
+      foto2: "/cars/rs6/rs6-2.jpeg",
+      foto3: "/cars/rs6/rs6-3.jpeg",
+      foto4: "/cars/rs6/rs6-4.jpeg",
+      foto5: "/cars/rs6/rs6-5.jpeg",
+      marca: "AUDI",
+      modelo: "RS 6 Avant",
+      versao: "Quattro",
+      preco: "829.000,00",
+      anoFabricacao: 2020,
+      anoModelo: 2021,
+      km: "29.400",
+      motor: "4.0 v8 biturbo",
+      potencia: "600cv",
+      aceleracao: "0 a 100 em 3,6 seg",
+      airbag: 0,
+      combustivel: "Gasolina",
+      conservacao: "Seminovo",
+      transmissao: "Automático",
+      placaFim: 6,
+      portas: 4,
+      cor: "Preto",
+      bancos: "Couro | esportivos linha RS",
+      freios: "Abs com disco nas 4 rodas",
+      farois: "Full led",
+      rodas: "Aro 22' diamantadas",
+      blindado: "Sim",
+      bluetooth: "Sim",
+      tetoSolar: "Sim",
+      conversivel: "Não",
+      pilotoAutomatico: "Sim",
+      multimedia: "Sim - com apple carplay",
+      sensorChuva: "Sim",
+      sensorEstacionamento: "Dianteiro / traseiro / câmeras 360°",
+    },
+    {
+      id: 5,
       nome: "Porsche Taycan GTS",
-      foto1: "",
-      foto2: "",
-      foto3: "",
-      foto4: "",
-      foto5: "",
+      foto1: "taycan-1.jpeg",
+      foto2: "taycan-2.jpeg",
+      foto3: "taycan-3.jpeg",
+      foto4: "taycan-4.jpeg",
+      foto5: "taycan-5.jpeg",
       marca: "PORSCHE",
       modelo: "TAYCAN",
       versao: "GTS",
@@ -159,18 +228,17 @@ export const porsche911 = [
       sensorChuva: "Sim",
       sensorEstacionamento: "Dianteiro / traseiro / cameras 360°",
     },
-  ];
-
-  export const mercedesSlsAmg = [
     {
+      id: 6,
       nome: "Mercedes-AMG SLS AMG",
-      foto1: "",
-      foto2: "",
-      foto3: "",
-      foto4: "",
-      foto5: "",
+      foto1: "/cars/sls/sls-1.jpeg",
+      foto2: "/cars/sls/sls-2.jpeg",
+      foto3: "/cars/sls/sls-3.jpeg",
+      foto4: "/cars/sls/sls-4.jpeg",
+      foto5: "/cars/sls/sls-5.jpeg",
       marca: "MERCEDES-AMG",
       modelo: "SLS AMG",
+      versao: "",
       preco: "1.390.000,00",
       anoFabricacao: 2010,
       anoModelo: 2011,
@@ -185,7 +253,6 @@ export const porsche911 = [
       placaFim: 9,
       portas: 2,
       cor: "Vermelho",
-      garantiaDeFabrica: "Nao",
       bancos: "Couro",
       freios: "Abs com disco nas 4 rodas",
       farois: "Bi-xenon",
@@ -199,16 +266,14 @@ export const porsche911 = [
       sensorChuva: "Sim",
       sensorEstacionamento: "Camera de re/ dianteiro/ traseiro",
     },
-  ];
-
-  export const bmwM850i = [
     {
+      id: 7,
       nome: "BMW M850i xDrive",
-      foto1: "",
-      foto2: "",
-      foto3: "",
-      foto4: "",
-      foto5: "",
+      foto1: "/cars/m850i/m850i-1.jpeg",
+      foto2: "/cars/m850i/m850i-2.jpeg",
+      foto3: "/cars/m850i/m850i-3.jpeg",
+      foto4: "/cars/m850i/m850i-4.jpeg",
+      foto5: "/cars/m850i/m850i-5.jpeg",
       marca: "BMW",
       modelo: "M850i",
       versao: "xDrive",
@@ -239,16 +304,14 @@ export const porsche911 = [
       sensorChuva: "Sim",
       sensorEstacionamento: "Dianteiro / traseiro / cameras 360°",
     },
-  ];
-
-  export const jaguarFType = [
     {
+      id: 8,
       nome: "Jaguar F-Type P300 R-Dynamic",
-      foto1: "",
-      foto2: "",
-      foto3: "",
-      foto4: "",
-      foto5: "",
+      foto1: "/cars/f-type/f-type-1.jpeg",
+      foto2: "/cars/f-type/f-type-2.jpeg",
+      foto3: "/cars/f-type/f-type-3.jpeg",
+      foto4: "/cars/f-type/f-type-4.jpeg",
+      foto5: "/cars/f-type/f-type-5.jpeg",
       marca: "JAGUAR",
       modelo: "F-TYPE",
       versao: "P300 R-Dynamic",
