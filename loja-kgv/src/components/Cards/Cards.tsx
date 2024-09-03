@@ -1,23 +1,26 @@
-import { listaCarros } from "../../Data";
+import * as styled from "./styled";
+import { listaCarros } from "./Data";
+import { Link } from "react-router-dom";
 
 export default function Cards() {
   return (
     <div>
-    <div className="degrade"></div>
-    <h1 className="verCarros">Ver mais carros</h1>
-    <div className="divCarros">
-      <div className="carros">
-        
+      <h1 className="verCarros">Ver mais carros</h1>
+      
+      <styled.DivCarros>
         {listaCarros.map((carro) => (
-          <>
-            <img src={carro.foto1} alt="" />
+          <Link to={`/carros/${carro.id}`}>
+          <styled.DivCarro className="carros">
+            <styled.ImgCarro src={carro.foto1} alt={carro.nome} />
             <h3>{carro.nome}</h3>
-            <p>{carro.anoFabricacao}/{carro.anoModelo}</p>
-            <p>{carro.km}</p>
-          </>
-          ))}
-      </div>
+            <p>
+              {carro.anoFabricacao}/{carro.anoModelo}
+            </p>
+            <p>{carro.km} Km</p>
+          </styled.DivCarro>
+          </Link>
+        ))}
+      </styled.DivCarros>
     </div>
-  </div>
-  )
+  );
 }
