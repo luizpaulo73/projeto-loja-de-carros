@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+.divCarros {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-family: "Zen dots";
+    text-align: center;
+    justify-items: center;
+    gap: 30px;
+    margin: 0 300px;
+}
+
+.imgCarro {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.divCarro {
+    border: solid 2px #999999;
+    border-radius: 20px;
+    box-shadow: 7px 10px 18px -7px rgba(0,0,0,0.6);
+    transition: 0.4s linear;
+    position: relative;
+}
+
+.divCarro h3 {
+    font-family: "zen dots";
+}
+
+.divCarro:hover {
+    transform: translateY(-15px);
+}
+
+.linkCarro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
