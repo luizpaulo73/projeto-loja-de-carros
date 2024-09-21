@@ -1,0 +1,21 @@
+.divImagemCarro {
+    width: 80vw;
+    margin: 0 auto;
+    position: relative;
+}
+
+.imgCarro {
+    width: 100%;
+}
+
+.setaE {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.setaD {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}

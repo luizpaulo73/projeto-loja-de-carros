@@ -1,12 +1,14 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle";
+import styles  from './Carousel.module.css';
+
 import porsche1 from "/cars/carousel-img/porsche-gt3.png";
 import porsche2 from "/cars/carousel-img/porsche-911.png";
 import porsche3 from "/cars/carousel-img/porsche-911.png";
 
 export default function Carousel() {
   return (
-    <div className="carrossel">
+    <div className={styles.carrossel}>
     <div id="carouselExampleAutoplaying" className="carousel slide col-9 mx-auto" data-bs-ride="carousel">
   <div className="carousel-inner">
     <div className="carousel-item active">

@@ -6,7 +6,7 @@ export default function Cards() {
 
   return (
     <div>
-      <h1 className="verCarros">Ver mais carros</h1>
+      <h1 className={styles.verCarros}>Ver mais carros</h1>
       <div className={styles.divCarros}>
         {listaCarros.map((carro) => (
           <div className={styles.divCarro} key={carro.id}>
@@ -16,7 +16,7 @@ export default function Cards() {
               {carro.anoFabricacao}/{carro.anoModelo}
             </p>
             <p>{carro.km} Km</p>
-            <Link to={`/carros/${carro.id}`} className={styles.linkCarro}></Link>
+            <Link to={`/carro/${carro.id}`} className={styles.linkCarro}></Link>
           </div>
         ))}
       </div>

@@ -3,11 +3,15 @@
 .divCarros {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    font-family: "Zen dots";
     text-align: center;
     justify-items: center;
     gap: 30px;
     margin: 0 300px;
+}
+
+.verCarros {
+    text-align: center;
+    margin: 50px;
 }
 
 .imgCarro {
