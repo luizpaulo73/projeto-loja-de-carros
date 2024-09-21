@@ -20,9 +20,9 @@ export default function Carro() {
           <h1>{carro.nome}</h1>
           <p>{carro.preco}</p>
           <div className={styles.divImagemCarro}>
-          <img src={seta} alt="seta" className={styles.setaE}/>
+          <button onClick={foto == 1 ? () => setFoto(5) :() => setFoto(foto - 1)}><img src={seta} alt="seta" className={styles.setaE}/></button>
           <img src={carro[`foto${foto}`]} alt={carro.nome} className={styles.imgCarro}/>
-          <img src={seta} alt="seta" className={styles.setaD}/>
+          <button onClick={foto == 5 ? () => setFoto(1) :() => setFoto(foto + 1)}><img src={seta} alt="seta" className={styles.setaD}/></button>
           </div>
         </div>
 

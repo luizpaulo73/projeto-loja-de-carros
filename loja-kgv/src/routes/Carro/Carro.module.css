@@ -1,21 +1,21 @@
 .divImagemCarro {
     width: 80vw;
     margin: 0 auto;
-    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.divImagemCarro button {
+    background: transparent;
+    border: none;
 }
 
 .imgCarro {
-    width: 100%;
-}
-
-.setaE {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    width: 90%;
+    border-radius: 25px;
+    border: 3px solid black;
 }
 
 .setaD {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    transform: rotate(180deg);
 }
