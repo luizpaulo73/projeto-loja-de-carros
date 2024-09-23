@@ -1,4 +1,4 @@
-type Carro = {
+export type typeCarro = {
   id: number;
   nome: string;
   foto1: string;
@@ -37,7 +37,7 @@ type Carro = {
   sensorEstacionamento: string;
 };
 
-export const listaCarros: Carro[] = [
+export const listaCarros: typeCarro[] = [
     {
       id: 1,
       nome: "Ferrari 812 GTS",

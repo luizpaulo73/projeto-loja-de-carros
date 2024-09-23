@@ -2,17 +2,19 @@ import { useParams } from "react-router-dom";
 import { listaCarros } from "../../components/Cards/Data";
 import { useState } from "react";
 import styles from "./Carro.module.css";
+import { typeCarro } from "../../components/Cards/Data";
 
 import seta from "/images/seta.png"
 
 export default function Carro() {
   const { id } = useParams();
-  const carro = listaCarros.find(carro => carro.id === parseInt(id));
+  const carro: typeCarro | undefined = listaCarros.find(carro => carro.id);
+if (!carro) {
+  return <div>Carro não encontrado</div>;
+}
   document.title = carro.nome;
 
-  const [foto , setFoto] = useState(1)
-
-
+const [foto , setFoto] = useState<number>(1)
 
   return (
     <>
