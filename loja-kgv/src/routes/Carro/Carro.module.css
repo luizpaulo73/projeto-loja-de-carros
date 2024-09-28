@@ -1,8 +1,30 @@
+.container {
+    background-color: #DBDBDB;
+}
+
+.conteudo {
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0 50px;
+}
+
+.infoPrincipal {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .divImagemCarro {
     width: 80vw;
     margin: 0 auto;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .divImagemCarro button {
@@ -11,9 +33,7 @@
 }
 
 .imgCarro {
-    width: 90%;
-    border-radius: 25px;
-    border: 3px solid black;
+    width: 70%;
 }
 
 .setaD {

@@ -6,7 +6,7 @@ import "bootstrap/dist/js/bootstrap.bundle";
 export default function Header() {
   return (
       <header className={styles.cabecalho}>
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <nav className="navbar navbar-expand-lg">
     <div className="container-fluid">
     <div className="navbar-brand">
         <img src={logo} alt="Bootstrap" width="100" height="100"/>

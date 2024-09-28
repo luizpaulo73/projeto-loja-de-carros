@@ -1,5 +1,5 @@
 import styles from "./Cards.module.css";
-import { listaCarros } from "./Data";
+import { listaCarros } from "../../data/Data";
 import { Link } from "react-router-dom";
 
 export default function Cards() {

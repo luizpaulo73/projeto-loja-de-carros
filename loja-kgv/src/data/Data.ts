@@ -1,43 +1,6 @@
-type Carro = {
-  id: number;
-  nome: string;
-  foto1: string;
-  foto2: string;
-  foto3: string;
-  foto4: string;
-  foto5: string;
-  marca: string;
-  modelo: string;
-  versao: string;
-  preco: string;
-  anoFabricacao: number;
-  anoModelo: number;
-  km: string;
-  motor: string;
-  potencia: string;
-  aceleracao: string;
-  airbag: number;
-  combustivel: string;
-  conservacao: string;
-  transmissao: string;
-  placaFim: number;
-  portas: number;
-  cor: string;
-  bancos: string;
-  freios: string;
-  farois: string;
-  rodas: string;
-  blindado: string;
-  bluetooth: string;
-  tetoSolar: string;
-  conversivel: string;
-  pilotoAutomatico: string;
-  multimedia: string;
-  sensorChuva: string;
-  sensorEstacionamento: string;
-};
+import { TypeCarro } from "./Types";
 
-export const listaCarros: Carro[] = [
+export const listaCarros: TypeCarro[] = [
     {
       id: 1,
       nome: "Ferrari 812 GTS",
@@ -72,7 +35,7 @@ export const listaCarros: Carro[] = [
       tetoSolar: "Nao",
       conversivel: "Sim",
       pilotoAutomatico: "Sim",
-      multimedia: "Sim - com apple carplay",
+      multimidia: "Sim - com apple carplay",
       sensorChuva: "Sim",
       sensorEstacionamento: "Dianteiro / traseiro / cameras 360°",
     },
@@ -110,7 +73,7 @@ export const listaCarros: Carro[] = [
       tetoSolar: "Nao",
       conversivel: "Sim",
       pilotoAutomatico: "Sim",
-      multimedia: "Sim - com gps e entrada usb",
+      multimidia: "Sim - com gps e entrada usb",
       sensorChuva: "Nao",
       sensorEstacionamento: "Camera de re/ dianteiro/ traseiro",
     },
@@ -148,7 +111,7 @@ export const listaCarros: Carro[] = [
       tetoSolar: "Sim",
       conversivel: "Nao",
       pilotoAutomatico: "Sim",
-      multimedia: "Sim - com android auto e apple carplay",
+      multimidia: "Sim - com android auto e apple carplay",
       sensorChuva: "Sim",
       sensorEstacionamento: "Dianteiro / traseiro / cameras 360°",
     },
@@ -186,7 +149,7 @@ export const listaCarros: Carro[] = [
       tetoSolar: "Sim",
       conversivel: "Não",
       pilotoAutomatico: "Sim",
-      multimedia: "Sim - com apple carplay",
+      multimidia: "Sim - com apple carplay",
       sensorChuva: "Sim",
       sensorEstacionamento: "Dianteiro / traseiro / câmeras 360°",
     },
@@ -224,7 +187,7 @@ export const listaCarros: Carro[] = [
       tetoSolar: "Panoramico",
       conversivel: "Nao",
       pilotoAutomatico: "Sim",
-      multimedia: "Sim - com android auto e apple carplay",
+      multimidia: "Sim - com android auto e apple carplay",
       sensorChuva: "Sim",
       sensorEstacionamento: "Dianteiro / traseiro / cameras 360°",
     },
@@ -262,7 +225,7 @@ export const listaCarros: Carro[] = [
       tetoSolar: "Nao",
       conversivel: "Nao",
       pilotoAutomatico: "Sim",
-      multimedia: "Sim - com android auto e apple carplay instalado",
+      multimidia: "Sim - com android auto e apple carplay instalado",
       sensorChuva: "Sim",
       sensorEstacionamento: "Camera de re/ dianteiro/ traseiro",
     },
@@ -300,7 +263,7 @@ export const listaCarros: Carro[] = [
       tetoSolar: "Nao",
       conversivel: "Nao",
       pilotoAutomatico: "Sim",
-      multimedia: "Sim - com apple carplay",
+      multimidia: "Sim - com apple carplay",
       sensorChuva: "Sim",
       sensorEstacionamento: "Dianteiro / traseiro / cameras 360°",
     },
@@ -338,7 +301,7 @@ export const listaCarros: Carro[] = [
       tetoSolar: "Panoramico",
       conversivel: "Nao",
       pilotoAutomatico: "Sim",
-      multimedia: "Sim - com android auto e apple carplay",
+      multimidia: "Sim - com android auto e apple carplay",
       sensorChuva: "Sim",
       sensorEstacionamento: "Camera de re/ dianteiro/ traseiro",
     },

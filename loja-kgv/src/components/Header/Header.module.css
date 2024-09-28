@@ -1,24 +1,3 @@
- .cabecalho {
-    background-color: #A0A09E;
+.cabecalho nav {
+    background-color: #c6c6c6;
 }
-/*
-.logoCabecalho {
-    height: 90%;
-}
-
-.paginas {
-    width: 40vw;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    li {
-        list-style-type: none;
-    }
-
-    li a {
-        text-decoration: none;
-        font-size: 1.5rem;
-        color: black;
-    }
-} */
