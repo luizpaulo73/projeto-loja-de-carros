@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { listaCarros } from "../../data/Data";
 import { useState } from "react";
 import styles from "./Carro.module.css";
+import { typeCarro } from "../../components/Cards/Data";
 
 import seta from "/images/seta.png"
 import InfoCarro from "../../components/InfoCarro/InfoCarro";
@@ -9,6 +10,7 @@ import { TypeCarro } from "../../data/Types";
 
 export default function Carro() {
   const { id } = useParams();
+<<<<<<< HEAD
 
   const carro: TypeCarro | undefined = listaCarros.find(carro => carro.id == parseInt(id));
   
@@ -16,6 +18,15 @@ export default function Carro() {
   document.title = carro?.nome || "Carro Nao Encontrado";
 
   const [foto, setFoto] = useState<number>(1);
+=======
+  const carro: typeCarro | undefined = listaCarros.find(carro => carro.id);
+if (!carro) {
+  return <div>Carro não encontrado</div>;
+}
+  document.title = carro.nome;
+
+const [foto , setFoto] = useState<number>(1)
+>>>>>>> 7f15d354a1f6dd1441d880e4a9c0de5be588f22c
 
   return (
     <>
