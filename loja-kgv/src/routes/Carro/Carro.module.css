@@ -39,3 +39,7 @@
 .setaD {
     transform: rotate(180deg);
 }
+
+.infoContato {
+    width: 70%;
+}

@@ -38,7 +38,9 @@ export default function Carro() {
               <img src={seta} alt="seta" className={styles.setaD} />
             </button>
           </div>
+          <div className={styles.infoContato}>
           <InfoCarro carro={carro}/>
+          </div>
         </div>
       </main>
     </>
