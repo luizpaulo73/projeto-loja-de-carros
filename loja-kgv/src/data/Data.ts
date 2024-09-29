@@ -1,6 +1,6 @@
 import { TypeCarro } from "./Types";
 
-export const listaCarros: Carro[] = [
+export const listaCarros: TypeCarro[] = [
     {
       id: 1,
       nome: "Ferrari 812 GTS",

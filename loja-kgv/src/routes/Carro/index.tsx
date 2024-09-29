@@ -10,7 +10,6 @@ import { TypeCarro } from "../../data/Types";
 
 export default function Carro() {
   const { id } = useParams();
-<<<<<<< HEAD
 
   const carro: TypeCarro | undefined = listaCarros.find(carro => carro.id == parseInt(id));
   
@@ -18,15 +17,6 @@ export default function Carro() {
   document.title = carro?.nome || "Carro Nao Encontrado";
 
   const [foto, setFoto] = useState<number>(1);
-=======
-  const carro: typeCarro | undefined = listaCarros.find(carro => carro.id);
-if (!carro) {
-  return <div>Carro não encontrado</div>;
-}
-  document.title = carro.nome;
-
-const [foto , setFoto] = useState<number>(1)
->>>>>>> 7f15d354a1f6dd1441d880e4a9c0de5be588f22c
 
   return (
     <>
